@@ -2,9 +2,13 @@ package ed.examen.modelo.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import ed.examen.modelo.Persona;
+
 import org.junit.jupiter.api.Test;
 
 class PersonaTest {
+	
+	Persona p = new Persona("123456789Z", "Aitor", "Careaga");
 
 	@Test
 	void testPersonaStringStringString() {
@@ -13,7 +17,7 @@ class PersonaTest {
 
 	@Test
 	void testGetDni() {
-		fail("Not yet implemented");
+		assertEquals("123456789Z", p.getDni());
 	}
 
 	@Test
