@@ -10,6 +10,7 @@ import ed.examen.modelo.Persona;
 class CursoTest {
 	
 	Curso c = new Curso();
+	Persona p = new Persona("123456789Z", "Aitor", "Careaga");
 
 	@Test
 	void testEliminarAlumno() {
@@ -44,7 +45,11 @@ class CursoTest {
 
 	@Test
 	void testEstaRegistrado() {
-		String dni1 = "12345678Z";
+		c.aniadirAlumno(p); 
+		
+		boolean expected=true;
+		
+		assertEquals(expected, c.estaRegistrado("123456789Z"));
 	}
 
 	@Test
