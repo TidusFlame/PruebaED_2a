@@ -12,7 +12,9 @@ class PersonaTest {
 
 	@Test
 	void testPersonaStringStringString() {
-		fail("Not yet implemented");
+		assertEquals("123456789Z", p.getDni());
+		assertEquals("Aitor", p.getNombre());
+		assertEquals("Careaga", p.getApellido1());
 	}
 
 	@Test
