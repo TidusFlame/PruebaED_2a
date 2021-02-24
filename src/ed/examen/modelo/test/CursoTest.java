@@ -11,6 +11,7 @@ class CursoTest {
 	
 	Curso c = new Curso();
 	Persona p = new Persona("123456789Z", "Aitor", "Careaga");
+	Persona p2 = new Persona("123456789A", "Aito", "Careag");
 
 	@Test
 	void testEliminarAlumno() {
@@ -54,7 +55,10 @@ class CursoTest {
 
 	@Test
 	void testCurso() {
-		fail("Not yet implemented");
+		c.aniadirAlumno(p);
+		c.aniadirAlumno(p2);
+		Integer dos=2; 
+		assertEquals(dos,c.numeroAlumnos());
 	}
 
 	@Test
