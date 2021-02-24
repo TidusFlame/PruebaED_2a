@@ -44,7 +44,7 @@ class CursoTest {
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		String dni1 = "12345678Z";
 	}
 
 	@Test
