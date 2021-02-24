@@ -24,11 +24,11 @@ class PersonaTest {
 	void testSetDni() {
 		//clase valida
 				try {
-					p.setDni("12345678P");
+					p.setDni("123456789A");
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				assertEquals("12345678P", p.getDni());
+				assertEquals("12345679A", p.getDni());
 				
 				//clase invalida
 				boolean exceptionLanzada=false;
@@ -38,6 +38,7 @@ class PersonaTest {
 					exceptionLanzada=true;
 				}
 				assertTrue(exceptionLanzada);
+				
 			}
 
 	@Test
@@ -53,7 +54,7 @@ class PersonaTest {
 
 	@Test
 	void testGetApellido1() {
-		fail("Not yet implemented");
+		assertEquals("Careaga", p.getApellido1());
 	}
 
 	@Test
