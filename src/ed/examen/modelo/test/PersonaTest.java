@@ -30,7 +30,7 @@ class PersonaTest {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				assertEquals("12345679A", p.getDni());
+				assertEquals("123456789A", p.getDni());
 				
 				//clase invalida
 				boolean exceptionLanzada=false;
